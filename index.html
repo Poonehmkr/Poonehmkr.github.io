@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     body,
     h1,
@@ -17,10 +19,17 @@
         font-family: "Raleway", sans-serif
     }
 
+    ul {
+        list-style: square inside url("sqpurple.gif");
+    }
+
     body,
     html {
         height: 100%;
         line-height: 1.8;
+
+        scroll-behavior: smooth;
+
     }
 
     /* Full height image header */
@@ -28,7 +37,8 @@
         background-position: center;
         background-size: cover;
         background-image: url("bg.jpg");
-        min-height: 100%;
+
+        min-height: 120%;
     }
 
     .w3-bar .w3-button {
@@ -38,6 +48,17 @@
     .need-borders {
         border-left: solid 5px;
         border-radius: 5px;
+        border-color: #1b5765;
+        /* text-align: center; */
+    }
+
+    .skill-borders {
+
+        margin: 0;
+        width: 300px;
+        border-top: solid 5px;
+        border-radius: 5px;
+
         border-color: #1b5765;
         /* text-align: center; */
     }
@@ -88,15 +109,17 @@
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    <!-- <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
         style="display:none" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
             ×</a>
         <a href="#HOME" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
         <a href="#EXPERIENCE" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
-        <a href="#EDUCATIOM" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATIOM</a>
+        <a href="#EDUCATION" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+        <a href="#SKILLS" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+
         <a href="#CERTIFICATES" onclick="w3_close()" class="w3-bar-item w3-button">CERTIFICATES</a>
-    </nav>
+    </nav> -->
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min" id="HOME">
@@ -105,8 +128,17 @@
             <span class="w3-large">Research Intern at Nokia Bell labs Paris Saclay</span><br>
             <span class="w3-large">Network Engineering Master Student at Sorbonne University</span><br>
             <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-                <i class="fa fa-download"></i> Download Resume
-            </button>
+                <i href="/CV.pdf"" class=" fa fa-download"></i> Download Resume in English
+            </button><br>
+            <!-- <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i href="https://www.bell-labs.com/" class="fa fa-download"></i> Download Resume in French
+            </button> -->
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
+            <a href="https://github.com/Poonehmkr" class="fa fa-github w3-hover-opacity"></a>
+            <a href="poonemokariasl@gmail.com" class="fa fa-envelope w3-hover-opacity"></a>
+            <a href="https://www.linkedin.com/in/mokariasl/" class="fa fa-linkedin w3-hover-opacity"></a>
         </div>
     </header>
 
@@ -116,58 +148,87 @@
 
 
     <!-- Work Section -->
-    <div class="w3-container " style="padding:128px 30px" id="EXPERIENCE">
+    <div>
+        <div class="w3-container " style="padding:128px 30px" id="EXPERIENCE">
 
-        <h3 class="w3-text-teal">EXPERIENCE</h3>
-        <div style="padding:10px 250px">
-            <div class=" need-borders" style="padding:10px 15px">
-                <h4><b><a href="https://www.bell-labs.com/" class="subvitrin"> Nokia Bell labs Paris
-                            Saclay</a>|
-                        Research intern , IoT-Control Department
-                    </b></h4>
-                <h5>
-                    Feb 2020 - Present | Paris, France
-                    <br />
-                    <h4><b><a href="https://www.thecantillon.com/" class="subvitrin"> TheCantillon </a>|
-                            Business Developer
+            <h3 class="w3-text-deep-orange" style="padding:5px 100px">EXPERIENCE</h3>
+            <div style="padding:10px 300px">
+                <div class=" need-borders" style="padding:10px 15px">
+                    <h4><b><a href="https://www.bell-labs.com/" class="subvitrin"> Nokia Bell labs Paris
+                                Saclay</a>|
+                            Research intern , IoT-Control Department
                         </b></h4>
-                    <h5>
-                        Mar 2019 - Jan 2020 | Paris, France
+                    <ul>
+                        <i> Design new architecture for monitoring IoT networks using cloud technolog</i><br>
+                        <i>Implement the architecture on GNS3</i><br>
+                        <i>Implement the architecture in real network with devices</i>
+                    </ul>
+                    <h6 class=w3-text-red>
+                        Feb 2020 - Present | Paris, France
                         <br />
-                        <h4><b><a href="https://www.sciencespo.fr/" class="subvitrin"> SciencesPo</a>|
-                                Teacher Assistant
+                        <h4><b><a href="https://www.thecantillon.com/" class="subvitrin"> TheCantillon </a>|
+                                Business Developer
                             </b></h4>
-                        <h5>
-                            Jan 2019 - Jan 2020 | Paris, France
+                        <ul>
+                            <i> Arrange and attend appointments as the company’s agent</i><br>
+                            <i>Research on different target markets, implement marketing strategy </i><br>
+
+                            <i>Redesign the company’s Website to provide a better user experience
+                            </i><br></ul>
+                        <h6 class=w3-text-red>
+                            Mar 2019 - Jan 2020 | Paris, France
                             <br />
+                            <h4><b><a href="https://www.sciencespo.fr/" class="subvitrin"> SciencesPo </a>|
+                                    Teaching Assistant
+                                </b></h4>
+                            <ul><i>Design and maintenance a platform based on Github which more than 500 students can
+                                    present their projects</i></ul>
+                            <h6 class=w3-text-red>
+                                Jan 2019 - Jan 2020 | Paris, France
+                                <br />
+                                <h4><b><a href="https://www.sciencespo.fr/" class="subvitrin"> Fanap </a>|
+                                        Server Administrator
+                                    </b></h4>
+                                <ul>
+                                    <i>Use Opmaneger to manage the network and check connections
+                                        <br /><i> Impleiment of VOIP technology
+                                            <br /><i> Design customized firewall rules for load balancing and
+                                                security
+                                                <br /><i>Analyze the network traffic for customizing services in
+                                                    Company by Wireshark </i></ul>
+                                <h6 class=w3-text-red>
+                                    Jul 2017 - Sep 2017 | Tehran, Iran
+                                    <br />
+                </div>
             </div>
         </div>
     </div>
 
 
     <div class="w3-container w3-light-grey w3-padding-64" id="EDUCATION">
-        <h3 class="w3-text-teal">EDUCATION</h3>
-        <div style="padding:10px 250px">
+        <h3 class="w3-text-deep-orange" style="padding:5px 100px">EDUCATION</h3>
+        <div style="padding:10px 300px">
 
             <div class=" need-borders" style="padding:10px 15px">
-                <h4><b><a href="https://www.sorbonne-universite.fr/" class="subvitrin">Sorbonne University </a>| M.Sc In
+                <h4><b><a href="https://www.sorbonne-universite.fr/" class="subvitrin">Sorbonne University </a>|
+                        M.Sc In
                         Network
                         Engineering, IoT Major</b></h4>
-                <h5>
+                <h5 class=w3-text-red>
                     Sep 2018 - Present | Paris, France
                     <br />
 
                 </h5>
                 <hr style='color: red;' />
-                <h4><b><a href="https://www.kntu.ac.ir/" class="subvitrin">K. N. Toosi University of Technology </a>|
+                <h4><b><a href="https://www.kntu.ac.ir/" class="subvitrin">K. N. Toosi University of Technology
+                        </a>|
                         B.Sc
                         Computer
                         Engineering, Hardware Major</b>
                 </h4>
-                Bachelor thesis: Implementation of 3D Human Action Recognition system using Recurrent Neural Networks
-                and
-                LSTMs to handle sequential data.
-                <h5>
+                Bachelor thesis: Analyzing speed up of convergence time in routing protocols in GPU-based SDN by
+                parallelism using Mininet
+                <h5 class=w3-text-red>
                     2014 - 2018 | Tehran, Iran
                     <br>
                 </h5>
@@ -176,21 +237,110 @@
     </div>
 
 
-    </div>
+    <div class="w3-container  w3-padding-64 " id="SKILLS" style="padding-left: 10%" ;>
 
-    <!-- Pricing Section -->
-    <div class="w3-container  w3-dark-grey" style="padding:128px 16px" id="CERTIFICATES">
-        <h3 class="w3-text-teal">CERTIFICATES</h3>
+        <h3 class="w3-text-deep-orange">SKILLS</h3>
+        <div class="row">
+            <div class="col-sm-6">
 
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-third w3-section">
-
+                <h4 class="w3-text-teal">Programming</h4>
+                <ul class=" skill-borders">
+                    <li>Python<h5 class=w3-text-gray>Numpy / Scipy /
+                            Scikit-Learn / Pandas /
+                            Sokcetio /
+                            Jupyter Notebook</h5>
+                    </li>
+                    <li>Node JS<h5 class=w3-text-gray>Express / Socket.IO / dockerode
+                        </h5>
+                    </li>
+                    <li>HTML / CSS</li>
+                    <li>Git</li>
 
                 </ul>
             </div>
-            <div class="w3-third">
+            <div class="col-sm-6">
+
+                <h4 class="w3-text-teal">Network/Cloud</h4>
+
+                <ul class=" skill-borders">
+
+                    <li>Docker</li>
+                    <li>Kubernet</li>
+                    <li>Swarm</li>
+                    <li>AWS</li>
+                    <li>GNS3</li>
+                    <li>Wireshark</li>
+                    <li>Packet Tracer</li>
+
+                </ul>
 
 
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="w3-text-teal">OS</h4>
+                <div class=" skill-borders" style="padding:10px 15px">
+                    <ul>
+                        <li>Ubuntu</li>
+                        <li>Debain</li>
+                        <li>Alpine</li>
+                        <li>Macos</li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h4 class="w3-text-teal">Languages</h4>
+                    <div class=" skill-borders" style="padding:10px 15px">
+                        <ul>
+                            <li>Persian(Native)</li>
+                            <li>English(Fluent)</li>
+                            <li>French(Fluent)</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="w3-container w3-light-grey " style="padding:128px 16px" id="CERTIFICATES">
+        <h3 class="w3-text-deep-orange" style="padding:5px 100px">CERTIFICATES</h3>
+        <div style="padding:10px 300px">
+
+            <div class=" need-borders" style="padding:10px 15px">
+                <ul>
+                    <h5>
+                        CCNA(Routing and Switching)
+
+
+                        <br>
+
+                    </h5><br>
+
+                    <h5>
+                        CCNP(Routing and Switching)
+                    </h5><br>
+
+                    <h5> Introduction to Cybersecurity - EDX
+                    </h5><br>
+                    <h5>The CISO’s View - EDX </h5><br>
+                    <h5>Building Your Cybersecurity Toolkit -E DX</h5> <br>
+                    <h5>Network Security - EDX </h5> <br>
+                    <h5>Introduction to Cloud Computing - EDX</h5> <br>
+                    <h5> Introduction to Wireshark - Udemy</h5><br>
+                    <h5>Complete Certified Ethical Hacking MEGA Course - Udemy</h5>
                 </ul>
             </div>
 
